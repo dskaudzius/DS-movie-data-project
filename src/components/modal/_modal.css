@@ -1,0 +1,139 @@
+/* Modal */
+.modal-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 1;
+  padding-top: 10rem;
+  padding-left: 0;
+  padding-right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal-container {
+  background-color: #fefefe;
+  position: relative;
+  margin: auto;
+  max-width: 35rem;
+  border-radius: 0.3rem;
+  border: 2px solid #b59136;
+  box-shadow: 0 2px 6px rgba(170, 169, 171, 0.7);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -18.75rem;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -18.75rem;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  background-color: #604200;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.65rem 1.25rem;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+.modal-all-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-title-close {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.close {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.message {
+  color: #000;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 1rem;
+  word-wrap: break-word;
+}
+
+.message-btn {
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  width: 5rem;
+}
+
+/* Media queries */
+@media only screen and (max-width: 800px) {
+  .modal-container {
+    max-width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-container {
+    max-width: 20rem;
+  }
+  .message {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+  .close {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .modal-container {
+    max-width: 15rem;
+  }
+  .modal-header,
+  .message {
+    font-size: 0.9rem;
+  }
+  .close {
+    font-size: 1rem;
+  }
+  .message-btn {
+    margin-bottom: 1.25rem;
+    font-size: 0.9rem;
+  }
+}
