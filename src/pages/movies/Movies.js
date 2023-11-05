@@ -3,7 +3,7 @@ import RenderMovies from "../../components/renderData/RenderMovies";
 import NavBtnAddMovie from "../../components/UI/NavBtnAddMovie";
 
 const Movies = () => {
-  // Setting states and variables
+
   const [moviesList, setMoviesList] = useState(
     localStorage.getItem("moviesList")
       ? JSON.parse(localStorage.getItem("moviesList"))
@@ -15,8 +15,6 @@ const Movies = () => {
 
   useEffect(() => {}, [moviesList]);
 
-  // Returning components and showing them in DOM, sending props to components
-  // If user is logged in, showing username
   return (
     <Fragment>
       <main>

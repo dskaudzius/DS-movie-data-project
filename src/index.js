@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./style/index.css";
 import App from "./App";
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Layout from "./pages/layout/Layout";
 import LogIn from "./pages/login/LogIn";
 import Movies from "./pages/movies/Movies";
@@ -13,8 +13,7 @@ import NotFound from "./pages/notFound/NotFound";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    {/* <BrowserRouter> */}
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<App />} />
@@ -28,7 +27,6 @@ root.render(
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </HashRouter>
-    {/* </BrowserRouter> */}
+    </BrowserRouter>
   </>
 );
