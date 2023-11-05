@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/DS-movie-data-project/static/css/main.047fc340.css",
+    "main.js": "/DS-movie-data-project/static/js/main.36b31aaa.js",
+    "index.html": "/DS-movie-data-project/index.html",
+    "main.047fc340.css.map": "/DS-movie-data-project/static/css/main.047fc340.css.map",
+    "main.36b31aaa.js.map": "/DS-movie-data-project/static/js/main.36b31aaa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.047fc340.css",
+    "static/js/main.36b31aaa.js"
+  ]
+}
